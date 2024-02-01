@@ -12,8 +12,8 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 model_path = os.path.join(current_dir, "model", "text_emotion.pkl")
 pipe_lr = joblib.load(open(model_path, "rb"))
 emotions_emoji_dict = {
-    "anger": "😠", "disgust": "🤮", "fear": "😨😱", "happy": "🤗", "joy": "😂",
-    "neutral": "😐", "sad": "😔", "sadness": "😔", "shame": "😳", "surprise": "😮"
+    "anger": "😠", "disgust": "🤮", "fear": "😨😱",  "joy": "😂",
+    "neutral": "😐", "sadness": "😔", "surprise": "😮"
 }
 
 def predict_emotions(docx):
